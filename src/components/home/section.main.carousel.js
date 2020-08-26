@@ -1,13 +1,13 @@
-import React from 'react';
+import React from "react";
 
-import './section.main.carousel.css';
+import "./section.main.carousel.css";
 
-import CustomCarousel from '../misc/custom.carousel';
+import CustomSlider from "../misc/custom.slider";
 
 function SectionMainCarousel() {
   return (
     <div className="main__carousel">
-      <CustomCarousel>
+      <CustomSlider>
         <div className="main__carousel__slides">
           <img
             className="main__carousel__slide__bgimg"
@@ -20,7 +20,10 @@ function SectionMainCarousel() {
               <span className="">Dining</span>
               <span className="">Destination</span>
             </h2>
-            <a className="main__carousel__slide__text_callout" href="tel:44372121">
+            <a
+              className="main__carousel__slide__text_callout"
+              href="tel:44372121"
+            >
               ORDER NOW
             </a>
           </div>
@@ -32,7 +35,7 @@ function SectionMainCarousel() {
             alt="sheeshal-bg-img"
           ></img>
         </div>
-      </CustomCarousel>
+      </CustomSlider>
     </div>
   );
 }
