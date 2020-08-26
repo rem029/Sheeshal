@@ -1,0 +1,33 @@
+.footer {
+  height: 120px;
+  width: 100%;
+  background-color: #1b1b1e;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__address {
+  text-decoration: none;
+  list-style: none;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+
+  width: 95%;
+}
+
+.footer__address__item {
+  color: #6d676e;
+  margin: 2px 5px;
+  font-size: 14px;
+}
+
+.footer__address__item__icon {
+  color: #6d676e;
+  font-size: 14px;
+  margin: 0 10px;
+}

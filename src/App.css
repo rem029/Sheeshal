@@ -1,0 +1,45 @@
+.color {
+  color: #faa916;
+  color: #fbfffe;
+  color: #6d676e;
+  color: #1b1b1e;
+  color: #96031a;
+}
+
+.html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+button {
+  outline: 0;
+  border: 0;
+  background: transparent;
+}
+
+a {
+  outline: 0;
+  text-decoration: none;
+}
+
+.link-active-nav {
+  border-bottom: 2px solid #96031a;
+  box-shadow: 0 5px 2px -2px #4444442c;
+  color: #fbfffe !important;
+}
+
+.link-active-side-bar {
+  border-bottom: 2px solid #96031a;
+  color: #fbfffe !important;
+}

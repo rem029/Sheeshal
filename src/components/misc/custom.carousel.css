@@ -1,0 +1,56 @@
+.container__carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-end;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+.container__carousel > button {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  color: white;
+  border: 2px solid white;
+}
+
+.btn__left {
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.btn__right {
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.active {
+  animation: SlideIn 0.5s ease;
+}
+
+.not_active {
+  display: none;
+}
+
+@keyframes SlideIn {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes SlideOut {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+    display: none;
+  }
+}

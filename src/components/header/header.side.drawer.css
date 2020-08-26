@@ -1,0 +1,138 @@
+.header-side-drawer-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  z-index: -1;
+  transition: all 0.3s linear;
+}
+
+.header-side-drawer-container__show {
+  background-color: #808080e0;
+  z-index: 10;
+}
+
+.header-side-drawer-container-menu {
+  padding-top: 50px;
+  height: 100vh;
+  width: 70%;
+  background-color: #1b1b1e;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+
+  transform: translateX(-100%);
+  transition: all 0.3s linear;
+  z-index: 10;
+}
+
+.header-side-drawer-container-menu__show {
+  transform: translateX(0);
+}
+
+.header-side-drawer-container-menu__line {
+  width: 80%;
+  height: 2px;
+  background-color: #fbfffe;
+}
+
+.header-side-drawer-container-menu__sub {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 80%;
+}
+
+.header-side-drawer-container-menu__sub > button {
+  opacity: 0;
+  color: #faa916;
+  font-size: 24px;
+  padding: 5px;
+}
+
+.header-side-drawer-container-menu > nav {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.header-side-drawer-container-menu > nav > ul {
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+
+  height: 100%;
+  widows: 100%;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.header-side-drawer-container-menu > nav > ul > li {
+  margin: 10px 20px;
+  height: 100%;
+  widows: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* TEXT STYLE */
+.header-side-drawer-container-menu > nav > ul > li > a {
+  text-decoration: none;
+  color: #fbfffe;
+  padding: 0 10px;
+  font-size: 24px;
+  font-family: 'Raleway';
+  font-weight: 400;
+
+  transition: all 0.3s linear;
+}
+
+.header-side-drawer-container-menu__address {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+}
+
+.header-side-drawer-container-menu__address ul {
+  text-decoration: none;
+  list-style: none;
+  color: #6d676e;
+  font-family: 'Raleway';
+  font-size: 14px;
+  width: 80%;
+
+  padding-left: 25px;
+}
+
+.header-side-drawer-container-menu__address ul > li {
+  width: 100%;
+  margin: 10px 0;
+}
+
+/* IF SCREEN SIZE GREATER THAN 700px */
+@media only screen and (min-width: 700px) {
+  .header-side-drawer-container {
+    display: none;
+  }
+}
