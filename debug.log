@@ -1142,3 +1142,7 @@
 [0826/155051.551:ERROR:crash_report_database_win.cc(428)] unexpected header
 [0826/155331.255:ERROR:crash_report_database_win.cc(428)] unexpected header
 [0826/163146.853:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0826/220741.170:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0826/220741.171:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0826/220741.171:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0826/220741.171:ERROR:crash_report_database_win.cc(469)] failed to stat report
