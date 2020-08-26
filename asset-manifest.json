@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/Sheeshal/static/css/main.41de52cd.chunk.css",
-    "main.js": "/Sheeshal/static/js/main.975a8ad0.chunk.js",
-    "main.js.map": "/Sheeshal/static/js/main.975a8ad0.chunk.js.map",
+    "main.js": "/Sheeshal/static/js/main.6adc3eb9.chunk.js",
+    "main.js.map": "/Sheeshal/static/js/main.6adc3eb9.chunk.js.map",
     "runtime-main.js": "/Sheeshal/static/js/runtime-main.d1fb8054.js",
     "runtime-main.js.map": "/Sheeshal/static/js/runtime-main.d1fb8054.js.map",
-    "static/js/2.8c0308e9.chunk.js": "/Sheeshal/static/js/2.8c0308e9.chunk.js",
-    "static/js/2.8c0308e9.chunk.js.map": "/Sheeshal/static/js/2.8c0308e9.chunk.js.map",
+    "static/js/2.16901b6b.chunk.js": "/Sheeshal/static/js/2.16901b6b.chunk.js",
+    "static/js/2.16901b6b.chunk.js.map": "/Sheeshal/static/js/2.16901b6b.chunk.js.map",
     "index.html": "/Sheeshal/index.html",
-    "precache-manifest.86ff65f4d522f9657b513fbce054fb1c.js": "/Sheeshal/precache-manifest.86ff65f4d522f9657b513fbce054fb1c.js",
+    "precache-manifest.05061db326c860645f42ec986118037e.js": "/Sheeshal/precache-manifest.05061db326c860645f42ec986118037e.js",
     "service-worker.js": "/Sheeshal/service-worker.js",
     "static/css/main.41de52cd.chunk.css.map": "/Sheeshal/static/css/main.41de52cd.chunk.css.map",
-    "static/js/2.8c0308e9.chunk.js.LICENSE.txt": "/Sheeshal/static/js/2.8c0308e9.chunk.js.LICENSE.txt"
+    "static/js/2.16901b6b.chunk.js.LICENSE.txt": "/Sheeshal/static/js/2.16901b6b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.d1fb8054.js",
-    "static/js/2.8c0308e9.chunk.js",
+    "static/js/2.16901b6b.chunk.js",
     "static/css/main.41de52cd.chunk.css",
-    "static/js/main.975a8ad0.chunk.js"
+    "static/js/main.6adc3eb9.chunk.js"
   ]
 }
