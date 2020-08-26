@@ -1,11 +1,11 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
-import './header.css';
+import "./header.css";
 
-import HeaderNavLinks from './header.nav.links';
-import HeaderSideDrawer from './header.side.drawer';
-import ButtonBurger from '../misc/button.burger';
+import HeaderNavLinks from "./header.nav.links";
+import HeaderSideDrawer from "./header.side.drawer";
+import ButtonBurger from "../misc/button.burger";
 
 function Header({ sideBar, setSideBar, children }) {
   return (
@@ -27,7 +27,11 @@ function Header({ sideBar, setSideBar, children }) {
         </div>
         <div className="header-container__logo">
           <Link to="/">
-            <img className="home-logo" src="/resources/images/logo-3small.svg" alt="sheeshal-logo"></img>
+            <img
+              className="home-logo"
+              src="/Sheeshal/resources/images/logo-3small.svg"
+              alt="sheeshal-logo"
+            ></img>
           </Link>
         </div>
       </header>

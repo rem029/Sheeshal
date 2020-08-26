@@ -1,32 +1,36 @@
-import React, { useState } from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import React, { useState } from "react";
+import { HashRouter as Router, Switch, Route, Link } from "react-router-dom";
 
-import './App.css';
+import "./App.css";
 
-import Home from './routes/home';
-import Menu from './routes/menu';
-import Order from './routes/order';
+import Home from "./routes/home";
+import Menu from "./routes/menu";
+import Order from "./routes/order";
 
-import Header from './components/header/header';
-import Footer from './components/footer/footer';
+import Header from "./components/header/header";
+import Footer from "./components/footer/footer";
 
 function App() {
-  const tmp = 'FROM APP JS';
+  const tmp = "FROM APP JS";
   const [sideBar, setSideBar] = useState(false);
-  const [activePage, setActivePage] = useState('home');
+  const [activePage, setActivePage] = useState("home");
 
   return (
-    <Router>
+    <Router basename="/">
       <Header sideBar={sideBar} setSideBar={setSideBar}>
         <nav>
           <ul>
             <li>
               <Link
-                className={activePage === 'home' ? 'link-active-nav link-active-side-bar' : ''}
+                className={
+                  activePage === "home"
+                    ? "link-active-nav link-active-side-bar"
+                    : ""
+                }
                 to="/"
                 onClick={(e) => {
                   setSideBar(false);
-                  setActivePage('home');
+                  setActivePage("home");
                 }}
               >
                 Home
@@ -35,11 +39,15 @@ function App() {
 
             <li>
               <Link
-                className={activePage === 'menu' ? 'link-active-nav link-active-side-bar' : ''}
+                className={
+                  activePage === "menu"
+                    ? "link-active-nav link-active-side-bar"
+                    : ""
+                }
                 to="/menu"
                 onClick={(e) => {
                   setSideBar(false);
-                  setActivePage('menu');
+                  setActivePage("menu");
                 }}
               >
                 Menu
@@ -48,11 +56,15 @@ function App() {
 
             <li>
               <Link
-                className={activePage === 'order' ? 'link-active-nav link-active-side-bar' : ''}
+                className={
+                  activePage === "order"
+                    ? "link-active-nav link-active-side-bar"
+                    : ""
+                }
                 to="/order"
                 onClick={(e) => {
                   setSideBar(false);
-                  setActivePage('order');
+                  setActivePage("order");
                 }}
               >
                 Order Now
