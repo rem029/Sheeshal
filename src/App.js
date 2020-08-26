@@ -81,9 +81,10 @@ function App() {
         <Route path="/order">
           <Order tmp={tmp} />
         </Route>
-        <Route path="/">
+        <Route exact path="/">
           <Home tmp={tmp} />
         </Route>
+        <Route component={Home} />
       </Switch>
 
       <Footer />
