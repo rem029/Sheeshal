@@ -1,6 +1,8 @@
 .container__slider {
   position: relative;
   width: 100%;
+  height: auto;
+  max-height: 10%;
   padding: 0;
   overflow: hidden;
   display: flex;
@@ -11,36 +13,36 @@
   background-color: black;
 }
 
-.container__slider > button {
+.container__slider > .container__controls > button {
   background-color: transparent;
   outline: none;
   border: 0;
-  color: whitesmoke;
-  font-size: 24px;
+  color: #faa916;
+  font-size: 48px;
 }
 
-.container__slider > button:active {
-  color: black;
+.container__slider > .container__controls > button:active {
+  color: #fbfffe;
 }
 
-.slider__btn-next {
+.container__controls-btn-next {
   position: absolute;
-  right: 0;
+  right: 1%;
 }
 
-.slider__btn-prev {
+.container__controls-btn-prev {
   position: absolute;
-  left: 0;
+  left: 1%;
 }
 
-.container__slider__links {
+.container__controls-link {
   position: absolute;
   bottom: 5%;
   left: 50%;
   transform: translateX(-50%);
 }
 
-.container__slider__links-small {
+.container__controls-link-small {
   position: relative;
   width: 8px;
   height: 8px;
@@ -54,14 +56,15 @@
   margin: 0 2px;
 }
 
-.container__slider__links-small-active {
-  background-color: black;
+.container__controls-link-small-active {
+  background-color: #faa916;
 }
 
 .slider__item {
   box-sizing: border-box;
   min-width: 100%;
   height: auto;
+  max-height: 50%;
   overflow: hidden;
   object-fit: cover;
   height: auto;

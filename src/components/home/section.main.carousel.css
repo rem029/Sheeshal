@@ -2,9 +2,12 @@
   position: relative;
 
   height: auto;
-  min-height: 100%;
-  padding: 5px 0;
+  width: 95%;
+  max-height: 100%;
   background: #1b1b1e;
+
+  padding: 5px 0;
+  margin: 0 auto;
 
   display: flex;
   justify-content: center;
@@ -14,7 +17,8 @@
 }
 
 .main__carousel__slides {
-  min-width: 100%;
+  min-width: 80%;
+  height: auto;
 }
 
 .main__carousel__slide__bgimg {

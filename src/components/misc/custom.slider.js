@@ -1,6 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
 
-import "./custom.slider.css";
+import './custom.slider.css';
 
 function CustomCarousel({ children }) {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -17,6 +19,8 @@ function CustomCarousel({ children }) {
         }, 5000)
       );
     }
+
+    console.log(activeIndex);
   }, [slideDone]);
 
   const slideNext = () => {
@@ -53,59 +57,53 @@ function CustomCarousel({ children }) {
   };
 
   return (
-    <div
-      className="container__slider"
-      onMouseEnter={AutoPlayStop}
-      onMouseLeave={AutoPlayStart}
-    >
+    <div className="container__slider" onMouseEnter={AutoPlayStop} onMouseLeave={AutoPlayStart}>
       {children.map((item, index) => {
         return (
-          <div
-            className={"slider__item slider__item-active-" + (activeIndex + 1)}
-            key={index}
-          >
+          <div className={'slider__item slider__item-active-' + (activeIndex + 1)} key={index}>
             {item}
           </div>
         );
       })}
+      <div className="container__controls">
+        <div className="container__controls-link">
+          {children.map((item, index) => {
+            return (
+              <button
+                key={index}
+                className={
+                  activeIndex === index
+                    ? 'container__controls-link-small container__controls-link-small-active'
+                    : 'container__controls-link-small'
+                }
+                onClick={(e) => {
+                  e.preventDefault();
+                  setActiveIndex(index);
+                }}
+              ></button>
+            );
+          })}
+        </div>
 
-      <div className="container__slider__links">
-        {children.map((item, index) => {
-          return (
-            <button
-              key={index}
-              className={
-                activeIndex === index
-                  ? "container__slider__links-small container__slider__links-small-active"
-                  : "container__slider__links-small"
-              }
-              onClick={(e) => {
-                e.preventDefault();
-                setActiveIndex(index);
-              }}
-            ></button>
-          );
-        })}
+        <button
+          className="container__controls-btn-next"
+          onClick={(e) => {
+            e.preventDefault();
+            slideNext();
+          }}
+        >
+          <FontAwesomeIcon icon={faAngleRight} />
+        </button>
+        <button
+          className="container__controls-btn-prev"
+          onClick={(e) => {
+            e.preventDefault();
+            slidePrev();
+          }}
+        >
+          <FontAwesomeIcon icon={faAngleLeft} />
+        </button>
       </div>
-
-      <button
-        className="slider__btn-next"
-        onClick={(e) => {
-          e.preventDefault();
-          slideNext();
-        }}
-      >
-        {">"}
-      </button>
-      <button
-        className="slider__btn-prev"
-        onClick={(e) => {
-          e.preventDefault();
-          slidePrev();
-        }}
-      >
-        {"<"}
-      </button>
     </div>
   );
 }
